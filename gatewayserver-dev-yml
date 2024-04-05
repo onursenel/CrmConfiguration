@@ -17,7 +17,7 @@ eureka:
             routes[0]:
               id: customerservice
               predicates[0]: Path=/customerservice/api/v1/cities/**
-              uri: lb://customerservice
+              uri: lb://CUSTOMERSERVICE
             routes[1]:
               id: discoveryserver
               predicates[0]: Path=/eureka/web
